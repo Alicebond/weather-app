@@ -8,7 +8,7 @@ function init() {
 
   async function getWeatherData() {
     let cityName = getCityName();
-    if (!cityName) cityName = 'New York';
+    if (!cityName) cityName = 'Tokyo';
     let APIkey = '19abc771b03351a5a71843b28da01d91';
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIkey}`)
 
